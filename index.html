@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Decorated Tables</title>
+    <style>
+        body{
+            /* background-color: white; */
+            width:100%;
+            height:100vh;
+            /* margin: 0.5rem; */
+            margin-top: 250px;
+        }
+        header{
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 30px;
+            font-family:cursive;
+        }
+        table,tr,th,td{
+            border: 2px solid rgb(48, 39, 39);
+            border-collapse: collapse;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+            font-size: 25px;
+            font-family: cursive;
+        }
+        tr:nth-child(even){
+            background-color:whitesmoke
+        }
+        tr:nth-child(odd){
+            background-color: rgb(221, 208, 208);
+        }
+        th:nth-child(odd){
+            background-color: rgb(200, 179, 200);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <pre> <strong><marquee behavior="scroll" direction="right">Sample-Decorated-Table</marquee></strong></pre>
+        <header><u><b><em>Table:Class Time Table</em></b></u></header>
+    <table>
+        <tr>
+            <th>Day/Period</th>
+            <th>9:30-10:20</th>
+            <th>10:20-11:10</th>
+            <th>11:10-12:00</th>
+            <th>12:00-12:40</th>
+            <th>12:40-1:30</th>
+            <th>1:30-2:20</th>
+            <th>2:20-3:10</th>
+            <th>3:10-4:00</th>
+            <tr>
+                
+                <th>Monday</th>
+                <td>Maths</td>
+                <td style="background-color: rgb(144, 144, 218);">English</td>
+                <td style="background-color:rgb(184, 8, 184);">Chemistry</td>
+                <td rowspan="7"><br>L <br><br>U <br><br>N <br><br>C <br><br>H <br> <br></br></td>
+                <td colspan="3">Lab</td>
+                <!-- <td>Lab</td>
+                <td>Lab</td> -->
+                <td style="background-color:burlywood;">Physics</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td colspan="3">Lab</td>
+                <!-- <td>Lab</td>
+                <td>Lab</td> -->
+                <!-- <td>Lunch</td> -->
+                <td style="background-color: rgb(144, 144, 218);">English</td>
+                <td style="background-color:rgb(202, 56, 56);">Maths</td>
+                <td style="background-color:rgb(184, 8, 184);">Chemistry</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td style="background-color:rgb(202, 56, 56);">Maths</td>
+                <td>Physics</td>
+                <td style="background-color: rgb(144, 144, 218);">English</td>
+                <!-- <td>Lunch</td> -->
+                <td style="background-color:rgb(184, 8, 184);">Chemistry</td>
+                <td colspan="3">Lab</td>
+                <!-- <td>Lab</td>
+                <td>Lab</td> -->
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td style="background-color:burlywood;">Maths</td>
+                <td style="background-color: rgb(144, 144, 218);">English</td>
+                <td style="background-color:rgb(184, 8, 184);">Chemistry</td>
+                <!-- <td>Lunch</td> -->
+                <td style="background-color:rgb(240, 234, 234);">Library</td>
+                <td colspan="3">Lab</td>
+                <!-- <td>Lab</td>
+                <td>Lab</td> -->
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td colspan="3">Lab</td>
+                <!-- <td>Lab</td>
+                <td>Lab</td> -->
+                <!-- <td>Lunch</td> -->
+                <td style="background-color:rgb(202, 56, 56);">Maths</td>
+                <td style="background-color: rgb(144, 144, 218);">English</td>
+                <td style="background-color:rgb(184, 8, 184);">Chemistry</td>
+                <td style="background-color:rgb(69, 205, 198);">Physics</td>
+            </tr>
+            <tr>
+                <th>Saturday</th>
+                <td style="background-color:rgb(240, 234, 234);">Maths</td>
+                <td style="background-color: rgb(144, 144, 218);">English</td>
+                <td style="background-color:rgb(184, 8, 184);">Chemistry</td>
+                <!-- <td>Lunch</td> -->
+                <td colspan="3">Seminar</td>
+                <!-- <td>Seminar</td>
+                <td>Seminar</td> -->
+                <td>Physics</td>
+            </tr>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
